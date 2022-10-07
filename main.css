@@ -1,0 +1,201 @@
+.movie-heading {
+  font-size: 54px;
+  color: darkgreen;
+}
+
+.card {
+  border: 7px solid darkgreen;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: lightgoldenrodyellow;
+  transition: 0.3 ease;
+  cursor: pointer;
+  transition: ease 0.3s;
+  width: 400px;
+}
+
+.movie-ytlink-js {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.fundo {
+  animation: scales 3s alternate infinite;
+  transform-origin: center;
+}
+
+.pao-baixo {
+  animation: rotatepao 14s cubic-bezier(.1, .49, .41, .97) infinite;
+  transform-origin: center;
+}
+
+.pao-cima {
+  animation: rotatepao 7s 1s cubic-bezier(.1, .49, .41, .97) infinite;
+  transform-origin: center;
+}
+
+.olhos {
+  animation: olhos 2s alternate infinite;
+  transform-origin: center;
+}
+
+.left-sparks {
+  animation: left-sparks 4s alternate infinite;
+  transform-origin: 150px 156px;
+}
+
+.right-sparks {
+  animation: left-sparks 4s alternate infinite;
+  transform-origin: 310px 150px;
+}
+
+.olhos {
+  animation: olhos 2s alternate infinite;
+  transform-origin: center;
+}
+
+@keyframes scales {
+  from {
+    transform: scale(0.98)
+  }
+
+  to {
+    transform: scale(1)
+  }
+}
+
+@keyframes rotatepao {
+  0% {
+    transform: rotate(0deg)
+  }
+
+  50%,
+  60% {
+    transform: rotate(-20deg)
+  }
+
+  100% {
+    transform: rotate(0deg)
+  }
+
+}
+
+@keyframes olhos {
+  0% {
+    transform: rotateX(0deg);
+  }
+
+  100% {
+    transform: rotateX(30deg);
+  }
+}
+
+@keyframes left-sparks {
+  0% {
+    opacity: 0;
+  }
+
+}
+
+
+.main {
+
+  min-height: 600px;
+  margin: 0px auto;
+  width: auto;
+  max-width: 460px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.path {
+  stroke-dasharray: 300;
+  stroke-dashoffset: 300;
+  animation: dash 4s alternate infinite;
+}
+
+@keyframes dash {
+
+  0%,
+  30% {
+    fill: 4B4B62;
+    stroke-dashoffset: 0;
+  }
+
+  80%,
+  100% {
+    fill: transparent;
+    stroke-dashoffset: -200;
+  }
+
+
+}
+
+.center {
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+
+.wave {
+  width: 5px;
+  height: 100px;
+  background: linear-gradient(45deg, rgb(0, 0, 0), #fff);
+  margin: 10px;
+  animation: wave 1s linear infinite;
+  border-radius: 20px;
+}
+
+.wave:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.wave:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+.wave:nth-child(4) {
+  animation-delay: 0.3s;
+}
+
+.wave:nth-child(5) {
+  animation-delay: 0.4s;
+}
+
+.wave:nth-child(6) {
+  animation-delay: 0.5s;
+}
+
+.wave:nth-child(7) {
+  animation-delay: 0.6s;
+}
+
+.wave:nth-child(8) {
+  animation-delay: 0.7s;
+}
+
+.wave:nth-child(9) {
+  animation-delay: 0.8s;
+}
+
+.wave:nth-child(10) {
+  animation-delay: 0.9s;
+}
+
+@keyframes wave {
+  0% {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0);
+  }
+}
